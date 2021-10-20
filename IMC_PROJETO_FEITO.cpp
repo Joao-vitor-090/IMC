@@ -4,39 +4,39 @@ int main(){
 	float peso;float altura;
 	float imc;char sexo;
 	int id;
-	printf("\nInsira 'f'par feminino\nInsira'm'para masculino:\n");
+	printf("\n Insira 'f'para feminino: \n Insira'm'para masculino:\n");
 	scanf(" %c" ,&sexo);
 	fflush(stdin);
 	printf("\n \n Usar '.'(ponto) ao inves de ','(virgula)\n \n");
-	printf("\nInsira sua altura  : \n");
+	printf("\n Insira sua altura  : \n");
 	scanf(" %f" ,&altura);
-	printf("Insira sua peso  : \n");
+	printf(" Insira sua peso  : \n");
 	scanf(" %f" ,&peso);
-	printf("Seu peso : %.1f\nSua altura:%.2f \n", peso,altura);
+	printf(" Seu peso : %.1f\n Sua altura:%.2f \n", peso,altura);
     imc=peso/(altura*altura);
     printf("\n  Seu IMC :%.2f   \n",imc);
     if(imc < 18.5){
-    	printf("\n Classificacao :\n Magreza\n");
+    	printf("\n Classificacao :\n Magreza \n");
 	}
 	 if((imc >= 18.5) && (imc <= 24.9)){
     	printf("\n Classificacao :\n Normal\n");
 	}
 	 if((imc >= 25.0) && (imc <= 29.9)){
-    	printf("\n Classificacao :\nSobrepeso\n");
+    	printf("\n Classificacao :\n Sobrepeso\n");
 	}
 	 if((imc >= 30.0) && (imc <= 39.9)){
-    	printf("\n Classificacao :\nObesidade\n");
+    	printf("\n Classificacao :\n Obesidade\n");
 	}
 	 if(imc>40){
-    	printf("\n Classificacao :\nObesidade Grave\n");
+    	printf("\n Classificacao :\n Obesidade Grave\n");
 	}
-	printf("\n  Para um auxilio em indicar seu peso ideal indique sua altura novamente,\n porem sem pontuacao\n \n EXEMPLO:1.70=170: \n");
+	printf("\n Para um auxilio em indicar seu peso ideal indique sua altura novamente,\n porem sem pontuacao \n \n EXEMPLO:1.70=170: \n");
 	scanf(" %d" ,&id);
 	if( sexo== 'f'){
 	switch(id){
 		
 		case (148):{
-			printf("\nSeu peso ideial varia entre '39.4kG' ");
+			printf("\n Seu peso ideial varia entre '39.4kG' ");
 			break;
 		}
 		case (149):{
